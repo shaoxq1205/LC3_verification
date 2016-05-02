@@ -1,0 +1,33 @@
+
+
+assert(prob_ft.fetch_npc_out === dut.Fetch.npc_out );
+assert(prob_de.W_Control ===dut.Dec.W_Control);
+assert(prob_de.Mem_Control === dut.Dec.Mem_Control);
+assert(prob_de.E_Control === dut.Dec.E_Control);
+assert(prob_de.IR === dut.Dec.IR);
+assert(prob_de.npc_out === dut.Dec.npc_out);
+assert(prob_ex.pcout === dut.Ex.pcout);
+assert(prob_ex.aluout === dut.Ex.aluout);
+assert(prob_ex.dr === dut.Ex.dr);
+assert(prob_ex.W_Control_out === dut.Ex.W_Control_out);
+assert(prob_ex.IR_Exec === dut.Ex.IR_Exec);
+assert(prob_ex.sr1 === dut.WB.sr1);
+assert(prob_ex.sr2 === dut.WB.sr2);
+assert(prob_ex.M_Data === dut.Ex.M_Data);
+assert(prob_ex.Mem_Control_out === dut.Ex.Mem_Control_out);
+assert(prob_ex.NZP === dut.Ex.NZP);
+assert(prob_ma.memout === dut.MemAccess.memout);
+assert(prob_wb.d1 === dut.WB.d1);
+assert(prob_wb.d2 === dut.WB.d2);
+assert(prob_wb.psr === dut.WB.psr);
+assert(prob_cnt.br_taken === dut.Ctrl.br_taken);
+assert(prob_cnt.bypass_alu_1 === dut.Ctrl.bypass_alu_1);
+assert(prob_cnt.bypass_alu_2 === dut.Ctrl.bypass_alu_2);
+assert(prob_cnt.bypass_mem_1 === dut.Ctrl.bypass_mem_1);
+assert(prob_cnt.bypass_mem_2 === dut.Ctrl.bypass_mem_2);
+assert(prob_cnt.enable_decode === dut.Ctrl.enable_decode);
+assert(prob_cnt.enable_execute === dut.Ctrl.enable_execute);
+assert(prob_cnt.enable_writeback === dut.Ctrl.enable_writeback);
+assert(prob_cnt.enable_fetch === dut.Ctrl.enable_fetch);
+assert(prob_cnt.enable_updatePC === dut.Ctrl.enable_updatePC);
+assert(prob_cnt.mem_state === dut.Ctrl.mem_state);
